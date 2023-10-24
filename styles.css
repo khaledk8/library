@@ -93,4 +93,49 @@ header svg {
     grid-area: 2/2/3/3;
     background-color: #f3f3f3;
     margin: 8px 0 0 8px;
+    display: grid;
+    grid-auto-columns: max-content;
+    grid-auto-rows: max-content;
+    gap: 30px;
 }
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    font-size: 1.9rem;
+    margin: 50px;
+    border: 2px solid gray;
+    border-radius: 5px;
+    background-color: white;
+    max-height: auto;
+    min-width: 400px;
+    
+}
+
+.card p{
+    margin: 10px 0 0 10px;
+    width: 90%;
+    border-bottom: 1px solid gray;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100%;
+}
+
+.buttons div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid gray;
+    background-color: #444;
+    
+}
+
+
+.buttons div svg{
+    width:45px
+}
+
