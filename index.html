@@ -67,6 +67,40 @@
             </div>
         </div>
     </div>
+    <div class="popup-background"></div>
+    <div class="popup">
+        <div class="popup-head">
+            <span>Adding a new book</span>
+            <button>X</button>
+        </div>
+        <form action="get">
+            <div>
+                <label for="name">
+                    <span>Name:</span> <input type="text" name="name" id="name" required>
+                </label>
+            </div> 
+            <div>
+                <label for="author">
+                    <span>Author:</span> <input type="text" name="author" id="author" required>
+                </label>
+            </div>
+            <div>
+                <label for="pages" min="1" max="9999999">
+                    <span>pages:</span> <input type="number" name="pages" id="pages" required>
+                </label>
+            </div> 
+            <div>
+                <label for="status">
+                    <span>status:</span>
+                    <span>Read</span><input type="radio" name="status" id="read">
+                    <span>Unread</span><input type="radio" name="status" id="unread" checked="checked">
+                </label>
+            </div>
+            <div>
+                <input type="submit" value="Add">
+            </div>
+        </form>
+    </div>
     
 </body>
 </html>
