@@ -6,7 +6,7 @@
     <title>Library</title>
     <link rel="stylesheet" href="./styles.css">
     <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
-    <script src="./script.js"></script>
+    <script src="./script.js" defer></script>
     <style>
         * {
             font-family: 'roboto', Verdana, Geneva, Tahoma, sans-serif;
@@ -38,7 +38,7 @@
             <p>Total books: <span id="nbooks"></span></p>
             <p>Books read: <span id="nread"></span></p>
         </div>
-        <button>Add a book</button>
+        <button id="add-a-book">Add a book</button>
     </div>
     <div class="content">
         <div class="card">
@@ -67,13 +67,13 @@
             </div>
         </div>
     </div>
-    <div class="popup-background"></div>
-    <div class="popup">
+    <div id="popup-background" class="invisible"></div>
+    <div id="popup" class="invisible">
         <div class="popup-head">
             <span>Adding a new book</span>
-            <button>X</button>
+            <button id="close-button">X</button>
         </div>
-        <form action="get">
+        <form>
             <div>
                 <label for="name">
                     <span>Name:</span> <input type="text" name="name" id="name" required>
