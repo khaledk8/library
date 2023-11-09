@@ -43,8 +43,8 @@
     <div class="content">
         <div class="card">
             <p>Name: <span></span></p>
-            <p>Author:</p>
-            <p>pages:</p>
+            <p>Author: <span></span></p>
+            <p>pages: <span></span></p>
             <div class="buttons">
                 <div>
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
@@ -92,14 +92,16 @@
             <div>
                 <label for="status">
                     <span>status:</span>
-                    <span>Read</span><input type="radio" name="status" id="read">
-                    <span>Unread</span><input type="radio" name="status" id="unread" checked="checked">
+                    <span>Read</span><input type="radio" name="status" id="read" value="one">
+                    <span>Unread</span><input type="radio" name="status" id="unread" checked="checked" value="zero">
                 </label>
             </div>
             <div>
-                <input type="submit" value="Add">
+                <!-- <input type="submit" value="Add" onclick="getFormData()"> -->
+                
             </div>
         </form>
+        <button onclick="getFormData()">Add</button>
     </div>
     
 </body>
