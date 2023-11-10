@@ -1,3 +1,7 @@
+html {
+    height: 100%;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -8,7 +12,7 @@
 body {
     display: grid;
     grid-template-columns: 1fr 5fr;
-    grid-template-rows: 180px 100%;
+    grid-template-rows: 180px auto 30px;
     width: 100%;
     height: 100%;
 }
@@ -18,6 +22,16 @@ header {
    padding: 20px;
    background-color: #eee;
    box-shadow: 0 3px 10px #111;
+}
+
+footer {
+    grid-area: 3/2/4/2;
+    background-color: #eee;
+    box-shadow: 8px -3px 10px #111;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .logo {
@@ -43,6 +57,11 @@ header svg {
     gap: 100px;
     background-color: #eee;
     box-shadow: 3px 11px 10px #111;
+}
+
+.sidebar-footer {
+    grid-area: 3/1/4/2;
+    background-color: #eee;
 }
 
 .search-bar {
@@ -95,11 +114,13 @@ header svg {
     grid-area: 2/2/3/3;
     background-color: #f3f3f3;
     margin: 8px 0 0 8px;
-    display: grid;
-    grid-auto-columns: max-content;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: start;
+    /* grid-auto-columns: max-content;
     grid-auto-rows: max-content;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-auto-flow: row;
+    grid-auto-flow: row; */
     gap: 30px;
 }
 
@@ -114,6 +135,7 @@ header svg {
     background-color: white;
     max-height: auto;
     min-width: 400px;
+    
     
 }
 
@@ -237,3 +259,8 @@ form input[type="number"] {
     border-radius: 5px;
     
 }
+
+.read {
+    background: linear-gradient(90deg, rgba(21,103,10,1) 0%, rgba(113,255,88,1) 46%, rgba(22,116,15,1) 100%);
+}
+

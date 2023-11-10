@@ -46,6 +46,7 @@ function getFormData() {
 
 const contentDiv = document.querySelector('.content')
 
+
 function addBookToLibrary(book) {
     const div = document.createElement('div')
     const nameP = document.createElement('p')
