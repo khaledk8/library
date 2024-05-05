@@ -137,12 +137,14 @@ header svg {
     min-width: 400px;
     
     
+    
 }
 
 .card p{
     margin: 10px 0 0 10px;
     width: 90%;
     border-bottom: 1px solid gray;
+    
 }
 
 .buttons {
@@ -260,7 +262,7 @@ form input[type="number"] {
     
 }
 
-.read {
-    background: linear-gradient(90deg, rgba(21,103,10,1) 0%, rgba(113,255,88,1) 46%, rgba(22,116,15,1) 100%);
+.green {
+    background: radial-gradient(circle, rgba(62,222,25,1) 0%, rgba(12,116,0,1) 100%);
 }
 
